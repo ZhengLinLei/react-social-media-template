@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6,.tag{
+    font-weight: 400;
+}
+body{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+
+    ion-icon{
+        font-size: 32px;
+    }
+    /*BUBBLE*/
+    .bubble{
+        background-color: var(--secondary-color);
+        &.bubble-pill{
+            border-radius: 100px;
+        }
+        &.bubble-circle{
+            border-radius: 100%;
+        }
+    }
+    // BADGE THEME_COLOR
+    .badge-theme{
+        background-color: var(--neon-primary-color);
+        color: var(--primary-color);
+    }
+    // THEME TEXT
+    .theme-text{
+        color: var(--neon-primary-color);
+    }
+    // ALERT
+    .alert-pos{
+        position: absolute;
+        right: -5px;
+        top: -5px;
+    }
+    // USER DIRECT
+    .user-head-img{
+        &:not(.direct){
+            border: 2px solid var(--text-color);
+        }
+        &.direct{
+            border: 3px solid var(--neon-primary-color) !important;
+        }
+    }
+    // BUTTON
+    .btn-theme{
+        border: 1px solid var(--text-color);
+        background: var(--secondary-color);
+        color: var(--text-color);
+    }
+}

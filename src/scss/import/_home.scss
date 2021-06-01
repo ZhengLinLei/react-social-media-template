@@ -1,0 +1,109 @@
+.video-main{
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    width: 100vw;
+    height: 100vh;
+    > div{
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--primary-color);
+        scroll-snap-align: start;
+        position: relative;
+        left: 0;
+        top: 0;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.3);
+            left: 0;
+            top: 0;
+        }
+        .video-player{
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+        }
+        .video-user-info{
+            position: absolute;
+            height: 40vh;
+            right: 5px;
+            bottom: 100px;
+            .user-head{
+                position: relative;
+                img.user-icon-redirect{
+                    width: 40px;
+                    height: 40px;
+                }
+                .user-add-action{
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: -8px;
+                    width: 20px;
+                    height: 20px;
+                    background-color: var(--neon-primary-color);
+                    ion-icon{
+                        color: var(--primary-color);
+                    }
+                }
+            }
+            .bgm-disk{
+                img{
+                    box-sizing: content-box;
+                    border: 10px solid black;
+                    width: 30px;
+                    height: 30px;
+                }
+                animation: bgm-user-icon-rotate 5s infinite linear;
+            }
+            z-index: 2;
+        }
+        .video-description{
+            z-index: 2;
+            position: absolute;
+            left: 20px;
+            bottom: 100px;
+            max-width: 80vw;
+            h6{
+                font-size: 16px;
+            }
+            .bgm-name{
+                display: grid;
+                grid-template-columns: 20px 150px;
+                grid-gap: 5px;
+                align-items: center;
+                .note{
+                    ion-icon{
+                        font-size: 16px;
+                    }
+                }
+                .bgm-name-roll{
+                    overflow: hidden;
+                    width: 100%;
+                    span{
+                        display: inline-block;
+                        transform: translateX(150px);
+                        animation: bgm-name-roll 20s linear infinite;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+    @keyframes bgm-user-icon-rotate {
+        from{
+            transform: rotate(0);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes bgm-name-roll {
+
+        to{
+            transform: translateX(-100%);
+        }
+    }
+}

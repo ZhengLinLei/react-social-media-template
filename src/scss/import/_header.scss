@@ -1,0 +1,12 @@
+.Header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    z-index: 99;
+    section.search-section{
+        width: 48px;
+        height: 48px;
+    }
+}
