@@ -8,7 +8,7 @@ _This project was bootstrapped with [Create React App](https://github.com/facebo
 
 _For more info about ReactJS [here](https://reactjs.org)_
 
-_For a web view you can access [here](https://)_
+_For a web preview you can access [here](https://react-social-media.netlify.app/)_
 
 ![image](./tutorial/simply_view.png)
 
