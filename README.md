@@ -10,7 +10,7 @@ _For more info about ReactJS [here](https://reactjs.org)_
 
 _For a web view you can access [here](https://)_
 
-
+![image](./tutorial/simply_view.png)
 
 ### Notice
 
